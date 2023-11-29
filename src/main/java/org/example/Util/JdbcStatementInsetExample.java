@@ -8,7 +8,7 @@ public class JdbcStatementInsetExample {
     public static void main(String[] args) throws SQLException {
         Connection connection = LoadAndCreateConnection.GetConnection();
         Statement statement = connection.createStatement();
-        String query = "insert into student(student_id,firstname,lastname,city) values(104,'Takshvi','Goyal','jaipur')";
+        String query = "insert into student(student_id,firstname,lastname,city) values(105,'neenu','Goyal','jodhpur')";
         int value = statement.executeUpdate(query);
         System.out.println("data inserted in Table in student database: "+value);
 
